@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FAF8F5;
+    color: #1A1C1E;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom Utilities for Luxury UI */
+.bg-ivory-gradient {
+  background: linear-gradient(180deg, #FAF8F5 0%, #F5F0EB 100%);
+}
+
+.bg-charcoal-gradient {
+  background: linear-gradient(145deg, #1A1C1E 0%, #111314 100%);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #C8A97E 0%, #A18256 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-nav {
+  background: rgba(250, 248, 245, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(223, 216, 204, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #DFD8CC;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8A97E;
+}
+
+/* Image comparison slider styling */
+.before-after-slider input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FAF8F5;
+  border: 2px solid #C8A97E;
+  cursor: ew-resize;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+
+/* Smooth Image Hover Scaling */
+.img-zoom-container {
+  overflow: hidden;
+}
+.img-zoom-container img {
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.img-zoom-container:hover img {
+  transform: scale(1.05);
+}
