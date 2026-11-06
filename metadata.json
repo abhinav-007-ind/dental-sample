@@ -1,0 +1,7 @@
+{
+  "name": "Aurelia Dental",
+  "description": "Luxury cosmetic dentistry and smile makeover clinic in Chennai providing dental implants, Invisalign, and bespoke smile transformations.",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
